@@ -25,7 +25,7 @@ function Projects() {
                     <i class="icon devicon-vscode-plain colored"></i>
                 </li>
                 <li>
-                    <a href="https://github.com/DavidMSands/anyssa-sands" target="_blank" className='proj-a'><img src={anyssaLogo} className='logos'></img><br/></a>
+                    <a href="https://anyssasands.com/" target="_blank" className='proj-a'><img src={anyssaLogo} className='logos'></img><br/></a>
                     <h3>anyssasands.com</h3>
                     <p>Photography portfolio website for professional photographer.</p>
                     <p><i class="devicon-github-original colored"></i> <a href="https://github.com/DavidMSands/anyssa-sands" className='proj-link' target="_blank">Repo</a> | <a href="https://anyssasands.com/" className='proj-link' target="_blank">Site</a></p>

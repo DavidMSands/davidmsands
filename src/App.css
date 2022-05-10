@@ -300,6 +300,8 @@ ul li p {
     translateZ(175px)
 }
 
+
+
 #about {
     margin-top: 890px;
     padding: 0px 0 50px 0;
@@ -332,6 +334,11 @@ ul li p {
 
     section ul li:nth-child(1) {
         margin-right: 0px;
+    }
+
+    section ul {
+        text-align: center;
+        /* justify-content: ; */
     }
 }
 
@@ -369,6 +376,11 @@ ul li p {
     display: flex;
     text-align: left;
     margin: auto;
+}
+
+#split div p {
+    font-weight: 700;
+    color: #747474;
 }
 
 @media (max-width: 743px) {
@@ -438,14 +450,28 @@ ul li p {
         top: 0;
         left: 0;
         background-color: rgba(255, 255, 255, 0.2);
-        font-size: 3em;
+        font-size: 3.4em;
         padding: 5px 12px;
         border-top: 1px solid rgba(255, 255, 255, 0.2);
         border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         transform-style: preserve-3d;
         transform-origin: center;
         transform: rotateY(calc(var(--char-index) * 28deg)) 
-        translateZ(135px)
+        translateZ(145px)
+    }
+    
+    .circle {
+        animation: animate 8s linear infinite;
+    }
+
+    @keyframes animate {
+        0% {
+            transform: perspective(1000px) rotateY(360deg) rotateX(15deg);
+        }
+
+        100% {
+            transform: perspective(1000px) rotateY(0deg) rotateX(15deg);
+        }
     }
 }
 
