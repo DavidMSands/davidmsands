@@ -9,9 +9,6 @@ const [blogs, setBlogs] = useState([])
         .then(res => res.json())
         .then(blogs => setBlogs(blogs.items.slice(0,4)))
     }, [])
-
-    console.log(blogs)
-    
     
   return (
     <div id='blogs-container'>

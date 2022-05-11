@@ -14,7 +14,6 @@ function App() {
 
   function transformMouse(e) {
     setDeg(e.clientX/-3)
-    console.log(e.clientX)
   }
   
 
